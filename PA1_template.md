@@ -48,7 +48,7 @@ steps_int <-data %>%
   summarize(mean_steps=mean(steps, na.rm=TRUE))
 
 ggplot(data=steps_int, aes(x=steps_int$interval, y=mean_steps, group=1, color="maroon")) +
-   geom_line()+xlab("Interval")+ylab("Mean Nbr Of Steps")+ggtitle("Mean Nbr of Steps Taken By Intervals")
+   geom_line()+xlab("Interval")+ylab("Mean Nbr Of Steps")+ggtitle("Mean Nbr of Steps Taken By Intervals")+theme(legend.position = "none") 
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->

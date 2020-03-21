@@ -1,9 +1,0 @@
----
-title: "Reproducible Research"
-author: "Adam Smith"
-date: "3/18/2020"
-output: html_document
----
-
-# Submission of Reproducible Research Week 2 Assignment
-
