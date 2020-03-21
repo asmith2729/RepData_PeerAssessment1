@@ -18,7 +18,8 @@ data$date<- as.Date(data$date)
 
 ## What is mean total number of steps taken per day?
 ```{r echo=TRUE, warning=FALSE, message=FALSE}
-
+library(dplyr)
+library(ggplot2)
 steps_day <-data %>% 
   group_by(date) %>%
   summarize(sum_steps=sum(steps, na.rm=TRUE))
